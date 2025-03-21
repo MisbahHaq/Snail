@@ -74,8 +74,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(height: 20),
-
-                  /// Search Bar & Icons with Proper Spacing
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Row(
