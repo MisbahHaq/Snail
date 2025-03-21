@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         SizedBox(
-                          width: 220, // Adjust width as needed
+                          width: 220,
                           height: 50,
                           child: Container(
                             decoration: BoxDecoration(
