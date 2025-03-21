@@ -111,8 +111,6 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                         ),
-
-                        /// Icons with Space Between
                         Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
