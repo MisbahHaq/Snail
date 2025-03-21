@@ -31,8 +31,6 @@ class _HomePageState extends State<HomePage> {
               child: Column(
                 children: [
                   SizedBox(height: 70),
-
-                  /// Logo
                   Center(
                     child: Image.asset(
                       'assets/images/logo.png',
