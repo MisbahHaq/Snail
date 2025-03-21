@@ -41,7 +41,6 @@ class _HomePageState extends State<HomePage> {
                       fit: BoxFit.contain,
                     ),
                   ),
-
                   SizedBox(height: 30),
 
                   /// Title & Subtitle
@@ -61,12 +60,10 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-
                   SizedBox(height: 70),
 
                   /// Middle Image
                   Image.asset('assets/images/mid.png', fit: BoxFit.contain),
-
                   SizedBox(height: 20),
 
                   /// Order Nail Art Text
@@ -84,75 +81,73 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-
                   SizedBox(height: 20),
 
-                  /// Search Bar & Icons
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20),
-                        child: Row(
-                          children: [
-                            /// Search Box with Fixed Width
-                            SizedBox(
-                              width: 220, // Adjust as needed
-                              height: 50,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  border: Border.all(color: Colors.grey),
-                                  borderRadius: BorderRadius.circular(10),
-                                  gradient: LinearGradient(
-                                    begin: Alignment.topCenter,
-                                    end: Alignment.bottomCenter,
-                                    colors: [
-                                      Colors.white.withOpacity(0.2),
-                                      Colors.pinkAccent.withOpacity(0.6),
-                                    ],
-                                  ),
-                                ),
-                                child: TextField(
-                                  decoration: InputDecoration(
-                                    contentPadding: EdgeInsets.symmetric(
-                                      vertical: 12,
-                                    ),
-                                    prefixIcon: Icon(
-                                      Icons.search_rounded,
-                                      color: Colors.black54,
-                                    ),
-                                    hintText: "Search Product",
-                                    hintStyle: TextStyle(color: Colors.black54),
-                                    border: InputBorder.none,
-                                  ),
-                                ),
+                  /// Search Bar & Icons with Proper Spacing
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        /// Search Box with Fixed Width
+                        SizedBox(
+                          width: 220, // Adjust width as needed
+                          height: 50,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey),
+                              borderRadius: BorderRadius.circular(10),
+                              gradient: LinearGradient(
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                                colors: [
+                                  Colors.white.withOpacity(0.2),
+                                  Colors.pinkAccent.withOpacity(0.6),
+                                ],
                               ),
                             ),
-                            SizedBox(width: 10),
-                            Row(
-                              children: [
-                                Icon(
-                                  Icons.menu_rounded,
-                                  size: 28,
-                                  color: Colors.white,
+                            child: TextField(
+                              decoration: InputDecoration(
+                                contentPadding: EdgeInsets.symmetric(
+                                  vertical: 12,
                                 ),
-                                SizedBox(width: 10),
-                                Icon(
-                                  Icons.grid_view_rounded,
-                                  size: 28,
-                                  color: Colors.white,
+                                prefixIcon: Icon(
+                                  Icons.search_rounded,
+                                  color: Colors.black54,
                                 ),
-                                SizedBox(width: 10),
-                                Icon(
-                                  Icons.square_rounded,
-                                  size: 28,
-                                  color: Colors.white,
-                                ),
-                              ],
+                                hintText: "Search Product",
+                                hintStyle: TextStyle(color: Colors.black54),
+                                border: InputBorder.none,
+                              ),
+                            ),
+                          ),
+                        ),
+
+                        /// Icons with Space Between
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Icon(
+                              Icons.menu_rounded,
+                              size: 28,
+                              color: Colors.white,
+                            ),
+                            SizedBox(width: 15),
+                            Icon(
+                              Icons.grid_view_rounded,
+                              size: 28,
+                              color: Colors.white,
+                            ),
+                            SizedBox(width: 15),
+                            Icon(
+                              Icons.square_rounded,
+                              size: 28,
+                              color: Colors.white,
                             ),
                           ],
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   SizedBox(height: 20),
                 ],
