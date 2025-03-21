@@ -59,8 +59,6 @@ class _HomePageState extends State<HomePage> {
                   SizedBox(height: 70),
                   Image.asset('assets/images/mid.png', fit: BoxFit.contain),
                   SizedBox(height: 20),
-
-                  /// Order Nail Art Text
                   Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: Align(
