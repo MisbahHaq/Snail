@@ -79,7 +79,6 @@ class _HomePageState extends State<HomePage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        /// Search Box with Fixed Width
                         SizedBox(
                           width: 220, // Adjust width as needed
                           height: 50,
