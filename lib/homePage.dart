@@ -11,17 +11,47 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/logo.png"),
-            fit: BoxFit.cover,
+      extendBodyBehindAppBar: false,
+      appBar: AppBar(backgroundColor: Colors.transparent, elevation: 3),
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Image.asset("assets/images/bg.jpg", fit: BoxFit.cover),
           ),
-        ),
-        child: Column(children: []),
+          Column(
+            children: [
+              SizedBox(height: 70),
+              Center(
+                child: Image.asset(
+                  'assets/images/logo.png',
+                  width: 110,
+                  height: 110,
+                  fit: BoxFit.contain,
+                ),
+              ),
+              Column(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "S ' N A I L",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w900,
+                          fontSize: 20,
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [Text("Your Personal Inventory")],
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
       ),
     );
   }
