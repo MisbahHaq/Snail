@@ -57,8 +57,6 @@ class _HomePageState extends State<HomePage> {
                     ],
                   ),
                   SizedBox(height: 70),
-
-                  /// Middle Image
                   Image.asset('assets/images/mid.png', fit: BoxFit.contain),
                   SizedBox(height: 20),
 
