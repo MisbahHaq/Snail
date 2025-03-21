@@ -40,8 +40,6 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(height: 30),
-
-                  /// Title & Subtitle
                   Column(
                     children: [
                       Text(
